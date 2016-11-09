@@ -39,7 +39,6 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Class1.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup />
@@ -48,6 +47,8 @@
     <Content Include="Examenresultaten\selectie_examens.html" />
     <Content Include="images\elise.jpg" />
     <Content Include="images\linda.jpg" />
+    <Content Include="OpdrachtDeling\JS_taak_deling.html" />
+    <Content Include="OpdrachtKindergeld\JS_taak_kindergeld.html" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
