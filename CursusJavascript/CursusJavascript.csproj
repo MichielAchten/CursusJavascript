@@ -43,12 +43,13 @@
   </ItemGroup>
   <ItemGroup />
   <ItemGroup>
-    <Content Include="DOMKennismaking\documentObjectModelAangepast.html" />
-    <Content Include="Examenresultaten\selectie_examens.html" />
+    <Content Include="Projecten\documentObjectModelAangepast.html" />
+    <Content Include="Projecten\getallenreeksen.html" />
+    <Content Include="Projecten\selectie_examens.html" />
     <Content Include="images\elise.jpg" />
     <Content Include="images\linda.jpg" />
-    <Content Include="OpdrachtDeling\JS_taak_deling.html" />
-    <Content Include="OpdrachtKindergeld\JS_taak_kindergeld.html" />
+    <Content Include="Opdrachten\JS_taak_deling.html" />
+    <Content Include="Opdrachten\JS_taak_kindergeld.html" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
