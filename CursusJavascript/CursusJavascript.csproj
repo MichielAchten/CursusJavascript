@@ -43,6 +43,7 @@
   </ItemGroup>
   <ItemGroup />
   <ItemGroup>
+    <Content Include="Opdrachten\JS_taak_faculteit.html" />
     <Content Include="Projecten\documentObjectModelAangepast.html" />
     <Content Include="Projecten\getallenreeksen.html" />
     <Content Include="Projecten\selectie_examens.html" />
