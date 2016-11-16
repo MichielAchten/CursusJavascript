@@ -140,6 +140,7 @@
     <Content Include="Projecten\ImageGallery\javascript\image_gallery_versie1.js" />
     <Content Include="Projecten\ImageGallery\javascript\image_gallery_versie2.js" />
     <Content Include="Projecten\ImageGallery\javascript\image_gallery_versie3.js" />
+    <Content Include="Projecten\personeel.html" />
     <Content Include="Projecten\selectie_examens.html" />
     <Content Include="Opdrachten\JS_taak_deling.html" />
     <Content Include="Opdrachten\JS_taak_kindergeld.html" />
