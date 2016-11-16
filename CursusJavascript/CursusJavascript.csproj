@@ -43,6 +43,25 @@
   </ItemGroup>
   <ItemGroup />
   <ItemGroup>
+    <Content Include="images\clip_image002.gif" />
+    <Content Include="images\clip_image004.gif" />
+    <Content Include="images\clip_image006.gif" />
+    <Content Include="images\clip_image008.gif" />
+    <Content Include="images\clip_image010.gif" />
+    <Content Include="images\clip_image012.gif" />
+    <Content Include="images\clip_image014.gif" />
+    <Content Include="images\clip_image016.gif" />
+    <Content Include="images\css3_logo_32.png" />
+    <Content Include="images\elise.jpg" />
+    <Content Include="images\hand.gif" />
+    <Content Include="images\HTML5_Logo_32.png" />
+    <Content Include="images\linda.jpg" />
+    <Content Include="images\question.gif" />
+    <Content Include="images\VDAB_200.png" />
+    <Content Include="Opdrachten\Toon-Verbergfiguren\displayImages.css" />
+    <Content Include="Opdrachten\Toon-Verbergfiguren\displayImages.js" />
+    <Content Include="Opdrachten\Toon-Verbergfiguren\JS_taak_displayImages.html" />
+    <Content Include="Opdrachten\JS_taak_FeatureSensing.html" />
     <Content Include="Opdrachten\JS_taak_faculteit.html" />
     <Content Include="Projecten\documentObjectModelAangepast.html" />
     <Content Include="Projecten\getallenreeksen.html" />
@@ -122,8 +141,6 @@
     <Content Include="Projecten\ImageGallery\javascript\image_gallery_versie2.js" />
     <Content Include="Projecten\ImageGallery\javascript\image_gallery_versie3.js" />
     <Content Include="Projecten\selectie_examens.html" />
-    <Content Include="images\elise.jpg" />
-    <Content Include="images\linda.jpg" />
     <Content Include="Opdrachten\JS_taak_deling.html" />
     <Content Include="Opdrachten\JS_taak_kindergeld.html" />
   </ItemGroup>

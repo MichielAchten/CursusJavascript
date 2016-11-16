@@ -1,0 +1,83 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>JS taak Feature Sensing</title>
+    <style>
+        .rood{background-color: #ff8abf;}
+        .groen{background-color: #ff9;}
+        #browserTest{font-weight: bold; background-color: #ff9;}
+        #featureLijst{width: 500px;}
+        .support{float: right;}
+        ul{background-color:#d8e6f3;}
+        li{margin: 0.2em;}
+    </style>
+    <script>
+        var aFeatures = [
+            "document.images",
+            "document.layers",
+            "document.all",
+            "document.getElementById",
+            "document.querySelector",
+            "document.styleSheets",
+            "document.createElement",
+            "document.createNodeIterator",
+            "document.implementation.createDocument",
+            "window.walkTheDog",
+            "window.focus",
+            "window.ActiveXObject",
+            "window.localStorage",
+            "[].push",
+            "[].filter",
+            "Object.prototype",
+            "navigator.geolocation",
+            "document.documentElement.classList"
+        ];
+
+        window.onload = function() {
+            var eBrowserTest = document.getElementById("browserTest");
+            eBrowserTest.innerHTML = "Uw browser is " + navigator.userAgent;
+
+            hasFeatures();
+        }
+
+        function hasFeatures() {
+            var eFeatures = document.getElementById("featureLijst");
+            var nFeatures = aFeatures.length;
+
+            if (nFeatures > 0) {
+                var sLijst = "<ul>";
+                for (var i = 0; i < nFeatures; i++) {
+                    var bSupport = false;
+                    if (eval(aFeatures[i])) {
+                        bSupport = true;
+                    }
+                    else {
+                        bSupport = false;
+                    }
+                    var sKleur = "";
+                    if (bSupport === true) {
+                        sKleur = "groen";
+                    }
+                    else {
+                        sKleur = "rood";
+                    }
+                    sLijst += "<li ";
+                    sLijst += "class='" + sKleur + "'>";
+                    sLijst += aFeatures[i];
+                    sLijst += " <span class='support'>" + bSupport + "</span>";
+                }
+                sLijst += "</ul>"
+                eFeatures.innerHTML = sLijst;
+            }
+        }
+    </script>
+</head>
+<body>
+    <h1>JS taak feature sensing</h1>
+    <div id="browserTest"></div>
+    <p>ondersteund de volgende objecten, collections, methods en properties:</p>
+    <div id="featureLijst"></div>
+</body>
+</html>
