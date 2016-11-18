@@ -1,0 +1,41 @@
+﻿@charset "utf-8";
+/* tag cloud */
+
+em {
+    font-style: normal;
+    font-weight: bold;
+    color: #906;
+}
+
+img {
+    float: left;
+}
+
+h3 {
+    clear: both;
+}
+
+#tagContainer {
+    position: relative;
+    background-color: #CFF;
+    margin: 1em;
+    padding: 0;
+    width: 500px;
+    height: 400px;
+    overflow: hidden;
+    border: 2px solid silver;
+}
+
+span.tag {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+/* kleur span */
+.rood {
+    color:red;
+}
+.groen {
+    color: green;
+}
