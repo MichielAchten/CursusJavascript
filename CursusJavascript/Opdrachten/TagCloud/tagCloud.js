@@ -18,10 +18,10 @@ window.onload = function () {
     var nArrTags = arrTags.length;
 
     for (var i = 0; i < nArrTags; i++) {
-        var eSpan = document.createElement("p");
+        var eSpan = document.createElement("span");
         var nVerschil = arrTags[i][1] - arrTags[i][2];
-        //var posTop = Math.round(Math.random() * 500) + 0;
-        //var posLeft = math.round(Math.random() * 400) + 0;
+        var posTop = Math.round(Math.random() * 300);
+        var posLeft = Math.round(Math.random() * 400);
         eSpan.innerHTML = arrTags[i][0];
         if (nVerschil < 0) {
             eSpan.setAttribute("class", "rood");
@@ -30,8 +30,8 @@ window.onload = function () {
             eSpan.setAttribute("class", "groen");
         }
         var ngrootte = bepaalGrootte(arrTags[i][1]);
-        //eSpan.setAttribute("style", ("font-size:" + ngrootte + "em; top:" + posTop + "px; left:" + posLeft + "px;"));
-        eSpan.setAttribute("style", ("font-size:" + ngrootte + "em; top:" + 1000 + "px; left:" + 1000 + "px;"));
+        eSpan.setAttribute("style", ("font-size:" + ngrootte + "em; top:" + posTop + "px; left:" + posLeft + "px;"));
+        //eSpan.setAttribute("style", ("font-size:" + ngrootte + "em; top:" + 10 + "px; left:" + 10 + "px;"));
         eContainer.appendChild(eSpan);
     }
 }

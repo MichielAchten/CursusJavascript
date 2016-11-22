@@ -35,7 +35,9 @@ span.tag {
 /* kleur span */
 .rood {
     color:red;
+    position: absolute;
 }
 .groen {
     color: green;
+    position: absolute;
 }
