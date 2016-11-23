@@ -68,10 +68,11 @@
     <Content Include="Opdrachten\Toon-Verbergfiguren\JS_taak_displayImages.html" />
     <Content Include="Opdrachten\JS_taak_FeatureSensing.html" />
     <Content Include="Opdrachten\JS_taak_faculteit.html" />
+    <Content Include="Projecten\cookiebank.html" />
     <Content Include="Projecten\documentObjectModelAangepast.html" />
     <Content Include="Projecten\EenKalender\kalender.css" />
     <Content Include="Projecten\EenKalender\kalender.html" />
-    <Content Include="Projecten\EenKalender\nuttig_lib.js" />
+    <Content Include="Projecten\nuttig_lib.js" />
     <Content Include="Projecten\getallenreeksen.html" />
     <Content Include="Projecten\ImageGallery\art\andrea_branzi.jpg" />
     <Content Include="Projecten\ImageGallery\art\art.txt" />
