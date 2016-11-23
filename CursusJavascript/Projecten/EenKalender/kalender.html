@@ -36,9 +36,15 @@
             divOutput.innerHTML = getVandaagStr();
 
             //divKalender.innerHTML = maakMaandTabel(2010, 1);
-            divKalender.innerHTML = maakMaandTabel(huidigJaar, huidigeMaand);
+            //divKalender.innerHTML = maakMaandTabel(huidigJaar, huidigeMaand);
+            //dagAanduiden(vandaag, "vandaag");
 
+            divKalender.innerHTML = maakJaarKalender(huidigJaar);
+
+            //dagen aanduiden
+            var verjaardag = new Date(huidigJaar, 06, 27);
             dagAanduiden(vandaag, "vandaag");
+            dagAanduiden(verjaardag, "verjaardag");
         }
 
         function maakMaandTabel(kalenderJaar, maandIndex) {
@@ -104,6 +110,23 @@
             }
             strMaandTabel += "</table>\n";
             return strMaandTabel;
+        }
+
+        function maakJaarKalender(kalenderJaar) {
+            /*
+            Dependency: maakMaandTabel()
+            Return: string, voor innerHtml: 12 maandtabellen
+
+            @ kalender: integer, 4 digit jaar
+            */
+
+            strJaarKalender = "";
+            for (var i = 0; i < 12; i++) {
+                strJaarKalender += "<div class='maandContainer'>";
+                strJaarKalender += maakMaandTabel(kalenderJaar, i);
+                strJaarKalender += "</div>";
+            }
+            return strJaarKalender;
         }
     </script>
 </head>
