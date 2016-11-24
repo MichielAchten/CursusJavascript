@@ -1,0 +1,52 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <link href="taalkeuze.css" rel="stylesheet" media="all">
+    <script src="taalkeuze.js"></script>
+    <script>
+        window.onload = function () {
+            var eNederlands = document.getElementById("nederlands");
+            var eFrancais = document.getElementById("francais");
+            var eEnglish = document.getElementById("english");
+            
+            if (localStorage) {
+                if (localStorage.taal) {
+                    //gekende taal
+                    var sTaal = localStorage.taal;
+                    var url = "";
+                    switch (sTaal) {
+                        case "nederlands":
+                            url = "nederlands.html";
+                            break;
+                        case "francais":
+                            url = "francais.html";
+                            break;
+                        case "english":
+                            url = "english.html";
+                            break;
+                    }
+                    top.location.href = url;
+                }
+                else {
+                    //taal nog niet gekend
+                    eNederlands.addEventListener("click", function () { kiesTaal(this) });
+                    eFrancais.addEventListener("click", function () { kiesTaal(this) });
+                    eEnglish.addEventListener("click", function () { kiesTaal(this) });
+                }
+            }
+        }
+    </script>
+</head>
+<body>
+    <div class="talen">
+        <span>
+            <a id="nederlands" href="#" class="talen"><img src="../../images/be.png" /> Nederlands</a>
+            <a id="francais" href="#" class="talen"><img src="../../images/fr.png" /> Français</a>
+            <a id="english" href="#" class="talen"><img src="../../images/gb.png" /> English</a>
+        </span>
+    </div>
+</body>
+</html>

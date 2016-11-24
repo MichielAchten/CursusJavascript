@@ -59,6 +59,12 @@
     <Content Include="images\linda.jpg" />
     <Content Include="images\question.gif" />
     <Content Include="images\VDAB_200.png" />
+    <Content Include="Opdrachten\Taalkeuze\metLocalStorage\english.html" />
+    <Content Include="Opdrachten\Taalkeuze\metLocalStorage\francais.html" />
+    <Content Include="Opdrachten\Taalkeuze\metLocalStorage\intropagina.html" />
+    <Content Include="Opdrachten\Taalkeuze\metLocalStorage\nederlands.html" />
+    <Content Include="Opdrachten\Taalkeuze\metLocalStorage\taalkeuze.css" />
+    <Content Include="Opdrachten\Taalkeuze\metLocalStorage\taalkeuze.js" />
     <Content Include="Opdrachten\TagCloud\350px-World_Population.png" />
     <Content Include="Opdrachten\TagCloud\JS_taak_TagCloud.html" />
     <Content Include="Opdrachten\TagCloud\tagCloud.css" />
