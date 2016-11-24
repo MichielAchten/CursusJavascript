@@ -1,0 +1,24 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <link href="taalkeuze.css" rel="stylesheet" media="all">
+    <script src="../../../Projecten/nuttig_lib.js"></script>
+    <script src="taalkeuze.js"></script>
+    <script>
+    window.onload = function () {
+        var eknop = document.getElementById("taalkeuzeVerwijderen");
+        eknop.addEventListener("click", verwijderTaalkeuze);
+    }
+    </script>
+
+</head>
+<body>
+    <div class="talen">
+        <p>Dit is de franstalige pagina</p>
+    </div>
+    <button id="taalkeuzeVerwijderen">Taal opnieuw kiezen</button>
+</body>
+</html>

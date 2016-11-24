@@ -59,6 +59,12 @@
     <Content Include="images\linda.jpg" />
     <Content Include="images\question.gif" />
     <Content Include="images\VDAB_200.png" />
+    <Content Include="Opdrachten\Taalkeuze\metCookies\english.html" />
+    <Content Include="Opdrachten\Taalkeuze\metCookies\francais.html" />
+    <Content Include="Opdrachten\Taalkeuze\metCookies\intropagina.html" />
+    <Content Include="Opdrachten\Taalkeuze\metCookies\nederlands.html" />
+    <Content Include="Opdrachten\Taalkeuze\metCookies\taalkeuze.css" />
+    <Content Include="Opdrachten\Taalkeuze\metCookies\taalkeuze.js" />
     <Content Include="Opdrachten\Taalkeuze\metLocalStorage\english.html" />
     <Content Include="Opdrachten\Taalkeuze\metLocalStorage\francais.html" />
     <Content Include="Opdrachten\Taalkeuze\metLocalStorage\intropagina.html" />
