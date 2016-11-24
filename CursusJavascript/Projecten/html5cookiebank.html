@@ -58,27 +58,33 @@
             var sNaam = "nieuwe klant";     //standaard invulling naam
             var nSaldo = 0;     //standaard saldo
 
-            //test cookie
-            if (getCookie("klantnaam")) {
-                //gekende klant
-                var sNaam = getCookie("klantnaam");
-                //var nSaldo = getCookie("saldo");
-                var nSaldo = parseFloat(getCookie("saldo")).toFixed(2);
+            if (localStorage) {
+                //kan deze browser dit script aan?
+                console.log("localstorage OK");
 
-                //outputbericht
-                sMsg = "Welkom " + sNaam + ",";
-                sMsg += "uw saldo bedraagt " + nSaldo + " Euro";
-                //knop
-                var eKnop = maakKnop("Sluit rekening");
-                eKnop.addEventListener("click", rekeningSluiten);   //eventhandler
+                if (localStorage.klantnaam) {
+                    //gekende klant
+                    var sNaam = localStorage.klantnaam;
+                    var nSaldo = parseFloat(localStorage.saldo).toFixed(2);
+
+                    //outputbericht
+                    sMsg = "Welkom " + sNaam + ",";
+                    sMsg += "uw saldo bedraagt " + nSaldo + " Euro";
+                    //knop
+                    var eKnop = maakKnop("Sluit rekening");
+                    eKnop.addEventListener("click", rekeningSluiten);   //eventhandler
+                }
+                else {
+                    //eerste bezoek
+                    sMsg += "Welkom beste bezoeker. ";
+                    sMsg += "Als u bij ons een nieuwe rekening opent, ontvangt u een startdaldo van 100 Euro!";
+                    //knop
+                    var eKnop = maakKnop("Open rekening");
+                    eKnop.addEventListener("click", rekeningOpenen);
+                }
             }
             else {
-                //eerste bezoek
-                sMsg += "Welkom beste bezoeker. ";
-                sMsg += "Als u bij ons een nieuwe rekening opent, ontvangt u een startdaldo van 100 Euro!";
-                //knop
-                var eKnop = maakKnop("Open rekening");
-                eKnop.addEventListener("click", rekeningOpenen);
+                //gebruik cookies
             }
 
             //generische DOM elementen
@@ -116,9 +122,9 @@
             //console.log("rekening openen");
             var sNaam = window.prompt("Uw naam, graag?", "");
 
-            if (sNaam != "" && sNaam != null) {
-                setCookie("klantnaam", sNaam, 100);
-                setCookie("saldo", 100, 100);
+            if (sNaam != "") {
+                localStorage.setItem("klantnaam", sNaam);
+                localStorage.setItem("saldo", 100);
                 window.history.go(0);
             }
         }
@@ -126,8 +132,7 @@
         function rekeningSluiten() {
             //console.log("rekening sluiten");
             //vernietig de rekening, dus de cookies
-            clearCookie("klantnaam");
-            clearCookie("saldo");
+            localStorage.clear();
             window.history.go(0);
         }
         //----------------------------------------
@@ -139,7 +144,7 @@
             var nNieuwSaldo = 0;
             var eBedrag = document.getElementById("bedrag");
             var sBedrag = eBedrag.value;
-            var sSaldo = getCookie("saldo");
+            var sSaldo = localStorage.getItem("saldo");
             var sBericht = "";
             var re = /,/;
             sBedrag = sBedrag.replace(re, ".");
@@ -165,7 +170,7 @@
                         toonWaarschuwing(sBericht);
                     }
                     else {
-                        setCookie("saldo", nNieuwSaldo, 100);
+                        localStorage.setItem("saldo", nNieuwSaldo);
                         window.history.go(0);
                         eBedrag.value = "";
                     }
@@ -193,7 +198,6 @@
             eWarning.style.display = "block";
         }
     </script>
-    <script type="text/javascript" src="nuttig_lib.js"></script>
 </head>
 <body>
     <h1>CookieBank</h1>
