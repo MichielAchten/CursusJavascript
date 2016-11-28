@@ -62,6 +62,7 @@
     <Content Include="images\linda.jpg" />
     <Content Include="images\question.gif" />
     <Content Include="images\VDAB_200.png" />
+    <Content Include="Opdrachten\isbnVervolg.html" />
     <Content Include="Opdrachten\Taalkeuze\metCookies\english.html" />
     <Content Include="Opdrachten\Taalkeuze\metCookies\francais.html" />
     <Content Include="Opdrachten\Taalkeuze\metCookies\intropagina.html" />
@@ -88,6 +89,7 @@
     <Content Include="Projecten\documentObjectModelAangepast.html" />
     <Content Include="Projecten\EenKalender\kalender.css" />
     <Content Include="Projecten\EenKalender\kalender.html" />
+    <Content Include="Projecten\isbn.html" />
     <Content Include="Projecten\nuttig_lib.js" />
     <Content Include="Projecten\getallenreeksen.html" />
     <Content Include="Projecten\ImageGallery\art\andrea_branzi.jpg" />
