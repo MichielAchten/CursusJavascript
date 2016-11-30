@@ -43,6 +43,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="images\be.png" />
+    <Content Include="images\china.jpg" />
     <Content Include="images\clip_image002.gif" />
     <Content Include="images\clip_image004.gif" />
     <Content Include="images\clip_image006.gif" />
@@ -57,8 +58,10 @@
     <Content Include="images\gb.png" />
     <Content Include="images\hand.gif" />
     <Content Include="images\HTML5_Logo_32.png" />
+    <Content Include="images\ijs.jpg" />
     <Content Include="images\like.png" />
     <Content Include="images\linda.jpg" />
+    <Content Include="images\oscar.jpg" />
     <Content Include="images\question.gif" />
     <Content Include="images\VDAB_200.png" />
     <Content Include="Opdrachten\isbnVervolg.html" />
